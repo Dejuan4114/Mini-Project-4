@@ -6,15 +6,13 @@ class Main {
 
    System.out.println("How much do the pants cost?");
    int clothes = scan.nextInt();
-   System.out.println(inventory(clothes));
+   System.out.println("How much was made in a day?");
+   int numMoney = scan.nextInt();
+   System.out.println(inventory(clothes,numMoney));
  }
- static double inventory(double pantsAmount,double dayAmount,int totalAmount)
+ static int inventory(int dayAmount,int totalAmount)
  { 
- double amountLeft = dayAmount - totalAmount ;
+ int amountLeft = totalAmount - dayAmount;
  return amountLeft;
  }
-//Create a second method and call your method within the main method
-{
-  static int 
 }
-  }
